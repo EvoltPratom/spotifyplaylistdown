@@ -1,6 +1,7 @@
 # spotifyplaylistdown
 
 Download Spotify playlists
+`gh repo clone EvoltPratom/spotifyplaylistdown`
 
 ```python
 pip install -r requirements.txt
