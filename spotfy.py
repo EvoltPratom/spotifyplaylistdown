@@ -18,7 +18,8 @@ def get_spotify_track_names(url):
     trakcs = []
     soup = BeautifulSoup(r.content, 'lxml')
     for track in soup.find_all('span', {'class': 'track-name'}):
-        trakcs.append(track.text)
+        artist = track.parent.a.span.text
+        trakcs.append(f"{track.text} {artist}")
     return trakcs
 
 
